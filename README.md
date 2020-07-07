@@ -77,7 +77,7 @@ There are several ways and reasons to show notifications:
         }
     }
     ```
-    To configure Laravel Echo Server for ```https```, you need to update these configurations. Add the SSL Certification and Key path ```sslCertPath``` and ```sslKeyPath```. Next you need to add ```https: true``` in ```subscribers```.
+    To configure Laravel Echo Server for ```https```, you need to update these configurations. Add the SSL Certification and Key path ```sslCertPath``` and ```sslKeyPath```. Next you need to add ```"https": true``` in ```subscribers```.
     
     ***NOTE:*** You can modify parameters according to your need.
 3. We'll start server to check if everything is working fine ```laravel-echo-server start```.
