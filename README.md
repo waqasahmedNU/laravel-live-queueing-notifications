@@ -24,5 +24,5 @@ There are several ways and reasons to show notifications:
     127.0.0.1:6379> ping
     PONG
     ```
-    [Further reading](https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-redis-on-ubuntu-18-04)
+    - [Further reading](https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-redis-on-ubuntu-18-04)
 
