@@ -1,4 +1,4 @@
-# Laravel Queueing Notifications
+# Laravel Live/Queueing Notifications
 ### with Laravel Echo Server, Socket.IO and Redis (Queue)
 
 Laravel Echo Server - NodeJs server for Laravel Echo broadcasting with Socket.io. [Laravel Echo Server](https://github.com/tlaverdure/laravel-echo-server).
@@ -10,4 +10,11 @@ Redis is an in-memory data structure which store data as in-memory key–value p
 There are several ways and reasons to show notifications:
 1. If you only want to show live notifcations (like the count of notifications only) we can use only Redis and set key ```count``` for storing the count of notifications. We can also store more values as key-value pair.
 2. If you want to store further information about the notifcation (to show it in notificton tab) than we need to ```Create table for storing notifications data```.
+3. We can use both Redis with anyother database (e.g. MySQL) for achieving both of the above requirements.
+
+## Install Redis
+1. To use Redis on Windows, follow the [Link](https://riptutorial.com/redis/example/29962/installing-and-running-redis-server-on-windows).
+2. To use Redis on Linux:
+- To install Redis on Linux ``` sudo apt install redis-server ```. 
+- Use command to open this file (redis.conf) with your preferred text editor ```sudo nano /etc/redis/redis.conf``` and change ```supervised no``` to ```supervised systemd```
 
