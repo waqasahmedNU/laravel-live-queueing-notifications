@@ -12,7 +12,7 @@ There are several ways and reasons to show notifications:
 2. If you want to store further information about the notifcation (to show it in notificton tab) than we need to ```Create table for storing notifications data```.
 3. We can use both Redis with anyother database (e.g. MySQL) for achieving both of the above requirements.
 
-## Install Redis
+## Setup Redis
 1. To use Redis on Windows, follow the [Link](https://riptutorial.com/redis/example/29962/installing-and-running-redis-server-on-windows).
 2. To use Redis on Linux:
     - To install Redis on Linux ```sudo apt install redis-server```. 
@@ -24,12 +24,13 @@ There are several ways and reasons to show notifications:
     127.0.0.1:6379> ping
     PONG
     ```
-    - You can optionally set Redis password as well. [Further reading](https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-redis-on-ubuntu-18-04)
-3. Update the .env file in your project:
-```
-BROADCAST_DRIVER=redis
-REDIS_HOST=127.0.0.1
-REDIS_PASSWORD=null
-REDIS_PORT=6379
-REDIS_DB=0
-```
+    - You can set (optional) Redis password as well. [Further reading](https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-redis-on-ubuntu-18-04)
+3. Update the ***.env*** file in your project:
+    ```
+    BROADCAST_DRIVER=redis
+    REDIS_HOST=127.0.0.1
+    REDIS_PASSWORD=null
+    REDIS_PORT=6379
+    REDIS_DB=0
+    ```
+ # Setup Laravel Echo Server
