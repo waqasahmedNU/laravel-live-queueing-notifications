@@ -33,4 +33,4 @@ There are several ways and reasons to show notifications:
     REDIS_PORT=6379
     REDIS_DB=0
     ```
- # Setup Laravel Echo Server
+ ## Setup Laravel Echo Server
