@@ -15,16 +15,16 @@ There are several ways and reasons to show notifications:
 ## Setup Redis
 1. To use Redis on Windows, follow the [Link](https://riptutorial.com/redis/example/29962/installing-and-running-redis-server-on-windows).
 2. To use Redis on Linux:
-    - To install Redis on Linux ```sudo apt install redis-server```. 
-    - Use command to open this file (redis.conf) with your preferred text editor ```sudo nano /etc/redis/redis.conf``` and change ```supervised no``` to ```supervised systemd```.
-    - Now restart the Redis service ```sudo systemctl restart redis.service```.
-    - Test the Redis service ```sudo systemctl status redis```.
-    - You can use Redis cli ```redis-cli``` for checking if it is working correctly.
+    1. To install Redis on Linux ```sudo apt install redis-server```. 
+    2. Use command to open this file (redis.conf) with your preferred text editor ```sudo nano /etc/redis/redis.conf``` and change ```supervised no``` to ```supervised systemd```.
+    3. Now restart the Redis service ```sudo systemctl restart redis.service```.
+    4. Test the Redis service ```sudo systemctl status redis```.
+    5. You can use Redis cli ```redis-cli``` for checking if it is working correctly.
         ```
         127.0.0.1:6379> ping
         PONG
         ```
-    - You can set (optional) Redis password as well. [Further reading](https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-redis-on-ubuntu-18-04)
+    6. You can set (optional) Redis password as well. [Further reading](https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-redis-on-ubuntu-18-04)
 3. Update the ***.env*** file in your project:
     ```
     BROADCAST_DRIVER=redis
@@ -34,7 +34,7 @@ There are several ways and reasons to show notifications:
     REDIS_DB=0
     ```
 ## Setup Laravel Echo Server
-1. To install Laravel Echo Server ```npm install -g laravel-echo-server```
+1. To install Laravel Echo Server ```npm install -g laravel-echo-server```.
 2. Configure Laravel Echo Server ```laravel-echo-server init```.
     ![Image]()
     This will generate configuration file ```laravel-echo-server.json``` for echo server.
@@ -78,6 +78,8 @@ There are several ways and reasons to show notifications:
     }
     ```
     To configure Laravel Echo Server for ```https```, you need to update these configurations. Add the SSL Certification and Key path ```sslCertPath``` and ```sslKeyPath```. Next you need to add ```https: true``` in ```subscribers```.
-    ***NOTE:** You can modify parameters according to your need.
+    
+    ***NOTE:*** You can modify parameters according to your need.
+3. We'll start server to check if everything is working fine ```laravel-echo-server start```.
 
 
