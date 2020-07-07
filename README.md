@@ -15,6 +15,13 @@ There are several ways and reasons to show notifications:
 ## Install Redis
 1. To use Redis on Windows, follow the [Link](https://riptutorial.com/redis/example/29962/installing-and-running-redis-server-on-windows).
 2. To use Redis on Linux:
-- To install Redis on Linux ``` sudo apt install redis-server ```. 
-- Use command to open this file (redis.conf) with your preferred text editor ```sudo nano /etc/redis/redis.conf``` and change ```supervised no``` to ```supervised systemd```
+    - To install Redis on Linux ```sudo apt install redis-server```. 
+    - Use command to open this file (redis.conf) with your preferred text editor ```sudo nano /etc/redis/redis.conf``` and change ```supervised no``` to ```supervised systemd```.
+    - Now restart the Redis service ```sudo systemctl restart redis.service```.
+    - Test the Redis service ```sudo systemctl status redis```.
+    - You can use Redis cli ```redis-cli``` for checking if it is working correctly.
+    ```
+    127.0.0.1:6379> ping
+    PONG
+    ```
 
