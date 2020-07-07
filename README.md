@@ -24,5 +24,12 @@ There are several ways and reasons to show notifications:
     127.0.0.1:6379> ping
     PONG
     ```
-    - [Further reading](https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-redis-on-ubuntu-18-04)
-
+    - You can optionally set Redis password as well. [Further reading](https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-redis-on-ubuntu-18-04)
+3. Update the .env file in your project:
+```
+BROADCAST_DRIVER=redis
+REDIS_HOST=127.0.0.1
+REDIS_PASSWORD=null
+REDIS_PORT=6379
+REDIS_DB=0
+```
