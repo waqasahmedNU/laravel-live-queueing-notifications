@@ -33,4 +33,51 @@ There are several ways and reasons to show notifications:
     REDIS_PORT=6379
     REDIS_DB=0
     ```
- ## Setup Laravel Echo Server
+## Setup Laravel Echo Server
+1. To install Laravel Echo Server ```npm install -g laravel-echo-server```
+2. Configure Laravel Echo Server ```laravel-echo-server init```.
+    ![Image]()
+    This will generate configuration file ```laravel-echo-server.json``` for echo server.
+    ```
+    {
+        "authHost": "http://localhost",
+        "authEndpoint": "/broadcasting/auth",
+        "clients": [
+            {
+                "appId": "",
+                "key": ""
+            }
+        ],
+        "database": "redis",
+        "databaseConfig": {
+            "redis": {},
+            "sqlite": {
+                "databasePath": "/database/laravel-echo-server.sqlite"
+            }
+        },
+        "devMode": true,
+        "host": null,
+        "port": "6001",
+        "protocol": "http",
+        "socketio": {},
+        "secureOptions": 67108864,
+        "sslCertPath": "",
+        "sslKeyPath": "",
+        "sslCertChainPath": "",
+        "sslPassphrase": "",
+        "subscribers": {
+            "http": true,
+            "redis": true
+        },
+        "apiOriginAllow": {
+            "allowCors": false,
+            "allowOrigin": "",
+            "allowMethods": "",
+            "allowHeaders": ""
+        }
+    }
+    ```
+    To configure Laravel Echo Server for ```https```, you need to update these configurations. Add the SSL Certification and Key path ```sslCertPath``` and ```sslKeyPath```. Next you need to add ```https: true``` in ```subscribers```.
+    ***NOTE:** You can modify parameters according to your need.
+
+
