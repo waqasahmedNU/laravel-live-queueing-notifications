@@ -26,7 +26,7 @@ class AppNotificationController extends Controller
     public function post(Request $request, Response $response){
         if (!$this->isResourceExists($request->id)) {
             $resource = new Resources();
-            $resource->id = $request->id;
+//            $resource->id = $request->id;
             $resource->name = $request->name;
             $resource->save();
             $this->notification_operation->add($resource);

@@ -17,7 +17,7 @@ $router->get('/', function () use ($router) {
 
 $router->group(
     [
-        'prefix' => '/api',
+        'prefix' => '',
     ],
     function () use ($router) {
 
