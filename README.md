@@ -20,12 +20,13 @@ There are several ways and reasons to show notifications:
     3. Now restart the Redis service ```sudo systemctl restart redis.service```.
     4. Test the Redis service ```sudo systemctl status redis```.
     5. You can use Redis cli ```redis-cli``` for checking if it is working correctly.
+    
         ```
         127.0.0.1:6379> ping
         PONG
         ```
     6. You can set (optional) Redis password as well. [Further reading](https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-redis-on-ubuntu-18-04)
-3. Update the ***.env*** file in your project:
+3. Update the ***.env*** file in your project
 
     ```
     BROADCAST_DRIVER=redis
