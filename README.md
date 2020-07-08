@@ -122,3 +122,6 @@ There are several ways and reasons to show notifications:
 	<p align="center">
 		<img width="800" src="https://github.com/waqasahmedNU/laravel-live-queueing-notifications/blob/master/docs/images/notification_delete.PNG">
 	</p>
+
+## Demo API
+The demo API project is developed using [Lumen Framework](https://lumen.laravel.com/)
