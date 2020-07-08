@@ -1,4 +1,4 @@
-# Laravel Live/Queueing Notifications
+# Laravel Real-Time/Queueing Notifications
 ### with Laravel Echo Server, Socket.IO, Redis (Queue) and MySQL (For storing Notification)
 
 Laravel Echo Server - NodeJs server for Laravel Echo broadcasting with Socket.io. [Laravel Echo Server](https://github.com/tlaverdure/laravel-echo-server).
