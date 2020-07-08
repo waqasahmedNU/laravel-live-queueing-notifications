@@ -26,6 +26,7 @@ There are several ways and reasons to show notifications:
         ```
     6. You can set (optional) Redis password as well. [Further reading](https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-redis-on-ubuntu-18-04)
 3. Update the ***.env*** file in your project:
+
     ```
     BROADCAST_DRIVER=redis
     REDIS_HOST=127.0.0.1
