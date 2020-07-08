@@ -80,6 +80,20 @@ There are several ways and reasons to show notifications:
     To configure Laravel Echo Server for ```https```, you need to update these configurations. Add the SSL Certification and Key path ```sslCertPath``` and ```sslKeyPath```. Next you need to add ```"https": true``` in ```subscribers```.
     
     ***NOTE:*** You can modify parameters according to your need.
-3. We'll start server to check if everything is working fine ```laravel-echo-server start```.
+3. We'll start server to check if everything is working fine ```laravel-echo-server start```. 
+    ![Image]()
+
+4. To test Laravel Echo Server, using the URL syntx ```http://{HOST}:{PORT}/apps/{APP_ID}/{method}?auth_key={KEY}```.
+
+    Like ```http://localhost:6001/apps/7135664adb31c6d9/status?auth_key=22b5ea0e4a06d7d299048c93daa6e11e``` from ```laravel-echo-server.json``` file contains
+    ```
+    "clients": [
+		{
+			"appId": "7135664adb31c6d9",
+			"key": "22b5ea0e4a06d7d299048c93daa6e11e"
+		}
+	],
+    ```
+    ![Image]()
 
 
