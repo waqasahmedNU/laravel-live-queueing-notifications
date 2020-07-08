@@ -37,10 +37,10 @@ There are several ways and reasons to show notifications:
 1. To install Laravel Echo Server ```npm install -g laravel-echo-server```.
 2. Configure Laravel Echo Server ```laravel-echo-server init```.
 
-		<p align="center">
-			<img width="600" src="https://github.com/waqasahmedNU/laravel-live-queueing-notifications/blob/master/docs/images/laravel-echo-server-init.PNG">
-		</p>
-		
+	<p align="center">
+		<img width="600" src="https://github.com/waqasahmedNU/laravel-live-queueing-notifications/blob/master/docs/images/laravel-echo-server-init.PNG">
+	</p>
+
     This will generate configuration file ```laravel-echo-server.json``` for echo server.
     ```
     {
