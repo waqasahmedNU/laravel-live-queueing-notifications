@@ -124,4 +124,4 @@ There are several ways and reasons to show notifications:
 	</p>
 
 ## Demo API
-The demo API project is developed using [Lumen Framework](https://lumen.laravel.com/)
+The demo API project is developed using [Lumen Framework](https://lumen.laravel.com/).
