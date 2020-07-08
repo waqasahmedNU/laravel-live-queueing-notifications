@@ -78,10 +78,11 @@ There are several ways and reasons to show notifications:
     }
     ```
     To configure Laravel Echo Server for ```https```, you need to update these configurations. Add the SSL Certification and Key path ```sslCertPath``` and ```sslKeyPath```. Next you need to add ```"https": true``` in ```subscribers```.
-    
-    ***NOTE:*** You can modify parameters according to your need.
+	**NOTE:** You can modify parameters according to your need.
 3. We'll start server to check if everything is working fine ```laravel-echo-server start```. 
-    ![Image]()
+	
+	**NOTE:** **_Make sure Redis is running._**
+	![Image]()
 
 4. To test Laravel Echo Server, using the URL syntx ```http://{HOST}:{PORT}/apps/{APP_ID}/{method}?auth_key={KEY}```.
 
@@ -96,4 +97,10 @@ There are several ways and reasons to show notifications:
     ```
     ![Image]()
 
-
+## Testing
+1. Create Resource Notification
+	![Image]()
+2. Update Resource Notification
+	![Image]()
+3. Delete Resource Notification
+	![Image]()
