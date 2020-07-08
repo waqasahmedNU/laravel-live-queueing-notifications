@@ -111,14 +111,14 @@ There are several ways and reasons to show notifications:
 
 ## API Testing and Documentation
 1. Create Resource Notification
-<p align="center">
-	<img width="800" src="https://github.com/waqasahmedNU/laravel-live-queueing-notifications/blob/master/docs/images/notification_create.PNG">
-</p>
+	<p align="center">
+		<img width="800" src="https://github.com/waqasahmedNU/laravel-live-queueing-notifications/blob/master/docs/images/notification_create.PNG">
+	</p>
 2. Update Resource Notification
-<p align="center">
-	<img width="800" src="https://github.com/waqasahmedNU/laravel-live-queueing-notifications/blob/master/docs/images/notification_update.PNG">
-</p>
+	<p align="center">
+		<img width="800" src="https://github.com/waqasahmedNU/laravel-live-queueing-notifications/blob/master/docs/images/notification_update.PNG">
+	</p>
 3. Delete Resource Notification
-<p align="center">
-	<img width="800" src="https://github.com/waqasahmedNU/laravel-live-queueing-notifications/blob/master/docs/images/notification_delete.PNG">
-</p>
+	<p align="center">
+		<img width="800" src="https://github.com/waqasahmedNU/laravel-live-queueing-notifications/blob/master/docs/images/notification_delete.PNG">
+	</p>
