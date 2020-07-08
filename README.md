@@ -3,7 +3,7 @@
 
 Laravel Echo Server - NodeJs server for Laravel Echo broadcasting with Socket.io. [Laravel Echo Server](https://github.com/tlaverdure/laravel-echo-server).
 
-Use Laravel Echo Server and Socket.IO for broadcasting on a particular port for Real Time Notifications. Further documentation about [Broadcasting](https://laravel.com/docs/7.x/broadcasting).
+Use Laravel Echo Server and Socket.IO for broadcasting on a particular port for Real Time Notifications. Further documentation about [Broadcasting](https://laravel.com/docs/7.x/broadcasting) and [Notification](https://laravel.com/docs/7.x/notifications#sending-notifications).
 
 Redis - An in-memory data structure which store data as in-memory key–value pair. [Further Reading](https://redis.io/)
 
@@ -20,12 +20,14 @@ There are several ways and reasons to show notifications:
     3. Now restart the Redis service ```sudo systemctl restart redis.service```.
     4. Test the Redis service ```sudo systemctl status redis```.
     5. You can use Redis cli ```redis-cli``` for checking if it is working correctly.
+    
         ```
         127.0.0.1:6379> ping
         PONG
         ```
     6. You can set (optional) Redis password as well. [Further reading](https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-redis-on-ubuntu-18-04)
-3. Update the ***.env*** file in your project:
+3. Update the ***.env*** file in your project
+
     ```
     BROADCAST_DRIVER=redis
     REDIS_HOST=127.0.0.1
@@ -36,7 +38,11 @@ There are several ways and reasons to show notifications:
 ## Setup Laravel Echo Server
 1. To install Laravel Echo Server ```npm install -g laravel-echo-server```.
 2. Configure Laravel Echo Server ```laravel-echo-server init```.
-    ![Image]()
+
+	<p align="center">
+		<img width="600" src="https://github.com/waqasahmedNU/laravel-live-queueing-notifications/blob/master/docs/images/laravel-echo-server-init.PNG">
+	</p>
+
     This will generate configuration file ```laravel-echo-server.json``` for echo server.
     ```
     {
@@ -82,11 +88,14 @@ There are several ways and reasons to show notifications:
 3. We'll start server to check if everything is working fine ```laravel-echo-server start```. 
 	
 	**NOTE:** **_Make sure Redis is running._**
-	![Image]()
+	
+	<p align="center">
+		<img width="400" src="https://github.com/waqasahmedNU/laravel-live-queueing-notifications/blob/master/docs/images/laravel-echo-server-start.PNG">
+	</p
 
 4. To test Laravel Echo Server, using the URL syntx ```http://{HOST}:{PORT}/apps/{APP_ID}/{method}?auth_key={KEY}```.
 
-    Like ```http://localhost:6001/apps/7135664adb31c6d9/status?auth_key=22b5ea0e4a06d7d299048c93daa6e11e``` from ```laravel-echo-server.json``` file contains
+    For example ```http://localhost:6001/apps/7135664adb31c6d9/status?auth_key=22b5ea0e4a06d7d299048c93daa6e11e``` from ```laravel-echo-server.json``` file contains,
     ```
     "clients": [
 		{
@@ -95,12 +104,21 @@ There are several ways and reasons to show notifications:
 		}
 	],
     ```
-    ![Image]()
+		
+	<p align="center">
+		<img width="800" src="https://github.com/waqasahmedNU/laravel-live-queueing-notifications/blob/master/docs/images/laravel-echo-server-test.PNG">
+	</p
 
-## Testing
+## API Testing and Documentation
 1. Create Resource Notification
-	![Image]()
+	<p align="center">
+		<img width="800" src="https://github.com/waqasahmedNU/laravel-live-queueing-notifications/blob/master/docs/images/notification_create.PNG">
+	</p>
 2. Update Resource Notification
-	![Image]()
+	<p align="center">
+		<img width="800" src="https://github.com/waqasahmedNU/laravel-live-queueing-notifications/blob/master/docs/images/notification_update.PNG">
+	</p>
 3. Delete Resource Notification
-	![Image]()
+	<p align="center">
+		<img width="800" src="https://github.com/waqasahmedNU/laravel-live-queueing-notifications/blob/master/docs/images/notification_delete.PNG">
+	</p>
