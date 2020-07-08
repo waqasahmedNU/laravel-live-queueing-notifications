@@ -93,7 +93,7 @@ There are several ways and reasons to show notifications:
 
 4. To test Laravel Echo Server, using the URL syntx ```http://{HOST}:{PORT}/apps/{APP_ID}/{method}?auth_key={KEY}```.
 
-    Like ```http://localhost:6001/apps/7135664adb31c6d9/status?auth_key=22b5ea0e4a06d7d299048c93daa6e11e``` from ```laravel-echo-server.json``` file contains
+    For example ```http://localhost:6001/apps/7135664adb31c6d9/status?auth_key=22b5ea0e4a06d7d299048c93daa6e11e``` from ```laravel-echo-server.json``` file contains,
     ```
     "clients": [
 		{
@@ -104,17 +104,19 @@ There are several ways and reasons to show notifications:
     ```
 		
 	<p align="center">
-		<img width="600" src="https://github.com/waqasahmedNU/laravel-live-queueing-notifications/blob/master/docs/images/laravel-echo-server-test.PNG">
+		<img width="800" src="https://github.com/waqasahmedNU/laravel-live-queueing-notifications/blob/master/docs/images/laravel-echo-server-test.PNG">
 	</p
 
 ## Testing
 1. Create Resource Notification
 <p align="center">
-    <b>User Spec</b><br>
-    <br>
-    <img width="600" src="https://github.com/waqasahmedNU/laravel-live-queueing-notifications/blob/master/docs/images/notification_create.PNG">
+	<img width="800" src="https://github.com/waqasahmedNU/laravel-live-queueing-notifications/blob/master/docs/images/notification_create.PNG">
 </p>
 2. Update Resource Notification
-	![Image]()
+<p align="center">
+	<img width="800" src="https://github.com/waqasahmedNU/laravel-live-queueing-notifications/blob/master/docs/images/notification_update.PNG">
+</p>
 3. Delete Resource Notification
-	![Image]()
+<p align="center">
+	<img width="800" src="https://github.com/waqasahmedNU/laravel-live-queueing-notifications/blob/master/docs/images/notification_delete.PNG">
+</p>
