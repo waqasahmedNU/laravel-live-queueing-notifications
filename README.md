@@ -109,7 +109,7 @@ There are several ways and reasons to show notifications:
 		<img width="800" src="https://github.com/waqasahmedNU/laravel-live-queueing-notifications/blob/master/docs/images/laravel-echo-server-test.PNG">
 	</p
 
-## Testing
+## API Testing and Documentation
 1. Create Resource Notification
 <p align="center">
 	<img width="800" src="https://github.com/waqasahmedNU/laravel-live-queueing-notifications/blob/master/docs/images/notification_create.PNG">
