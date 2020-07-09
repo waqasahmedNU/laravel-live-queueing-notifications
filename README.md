@@ -1,5 +1,5 @@
-# Laravel Live/Queueing Notifications
-### with Laravel Echo Server, Socket.IO, Redis (Queue) and MySQL (For storing Notification)
+# Laravel Real-Time/Queueing Notifications
+### with Laravel Echo Server, Socket.IO, Redis (Queue) and MySQL (For storing notification related information)
 
 Laravel Echo Server - NodeJs server for Laravel Echo broadcasting with Socket.io. [Laravel Echo Server](https://github.com/tlaverdure/laravel-echo-server).
 
@@ -122,3 +122,6 @@ There are several ways and reasons to show notifications:
 	<p align="center">
 		<img width="800" src="https://github.com/waqasahmedNU/laravel-live-queueing-notifications/blob/master/docs/images/notification_delete.PNG">
 	</p>
+
+## Demo API
+The demo API project is developed using [Lumen Framework](https://lumen.laravel.com/).
