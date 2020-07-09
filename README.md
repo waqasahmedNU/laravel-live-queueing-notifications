@@ -12,6 +12,12 @@ There are several ways and reasons to show notifications:
 2. If you want to store further information about the notifcation (to show it in notificton tab) than we need to ```Create table for storing notifications data```.
 3. We can use both Redis with anyother database (e.g. MySQL) for achieving both of the above requirements.
 
+## Demo API Project Setup
+**The demo API project is developed using [Lumen Framework](https://lumen.laravel.com/).** To setup the project follow the steps.
+1. Clone or download the code from repository.
+2. Update .env file to connect with the database (MySQL, PostgreSQL etc.)
+3. Run command ```php artisan migrate``` to build database schema.
+
 ## Setup Redis
 1. To use Redis on Windows, follow the [Link](https://riptutorial.com/redis/example/29962/installing-and-running-redis-server-on-windows).
 2. To use Redis on Linux:
@@ -108,9 +114,6 @@ There are several ways and reasons to show notifications:
 	<p align="center">
 		<img width="800" src="https://github.com/waqasahmedNU/laravel-live-queueing-notifications/blob/master/docs/images/laravel-echo-server-test.PNG">
 	</p
-
-## Demo API
-The demo API project is developed using [Lumen Framework](https://lumen.laravel.com/).
 
 ## API Testing and Documentation
 1. Create Resource Notification
